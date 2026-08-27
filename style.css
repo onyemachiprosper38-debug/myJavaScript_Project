@@ -27,6 +27,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     width: 100%;
+    max-width: 400px;
     padding: 20px;
     background-color: red;
     border-radius: 20px;
@@ -37,7 +38,7 @@ body {
     grid-column: span 4;
     background: #000;
     color: green;
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
     text-align: right;
     padding: 30px 20px;
     border-radius: 12px;
@@ -47,8 +48,9 @@ body {
 }
 
 button {
-    padding: 20px 10px;
-    font-size: 1.5rem;
+    min-height: 64px;
+    padding: clamp(14px, 4vw, 20px) 10px;
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
     font-weight: bold;
     border: none;
     border-radius: 12px;
@@ -74,4 +76,24 @@ button:active {
 
 .zero {
     grid-column: span 2;
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 10px;
+    }
+
+    .calculator {
+        gap: 8px;
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .text-display {
+        padding: 20px 12px;
+    }
+
+    button {
+        min-height: 56px;
+    }
 }
