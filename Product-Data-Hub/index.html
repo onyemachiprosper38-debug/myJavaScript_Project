@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Data Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Product Data Hub</h1>
+  <p>Search for a product name or type (like "shirt", "laptop", or "jewelery").</p>
+
+  <!-- Search form -->
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search for a product...">
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- This is where messages like "loading" or "error" will show up -->
+  <p id="statusMessage"></p>
+
+  <!-- This is where the product cards will be added -->
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

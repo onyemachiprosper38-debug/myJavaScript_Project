@@ -1,0 +1,103 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+/* The search form */
+#searchForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2c7be5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a5cbf;
+}
+
+/* Status messages (loading, error, etc.) */
+#statusMessage {
+  font-weight: bold;
+}
+
+/* The container that holds all the product cards */
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* One product card */
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  width: 220px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin: 0 0 8px 0;
+}
+
+.product-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.source-label {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.source-fakestore {
+  background-color: #2c7be5;
+}
+
+.source-dummyjson {
+  background-color: #e67e22;
+}

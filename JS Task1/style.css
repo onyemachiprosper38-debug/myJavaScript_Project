@@ -1,0 +1,112 @@
+/* --- Global & Body Layout --- */
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  padding: 40px;
+}
+
+.app {
+  background-color: #ffffff;
+  width: 550px;           /* Widened slightly to fit buttons nicely */
+  margin: 0 auto;         /* Centers the container on the screen */
+  padding: 25px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;     /* Rounds the corners slightly */
+}
+
+/* --- Typography --- */
+h1 {
+  text-align: center;
+  color: #222222;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* --- Row Layout (Input Left, Buttons/Search Right) --- */
+.input-row {
+  display: flex;          /* Places inner items side-by-side */
+  align-items: center;    /* Vertically centers the items */
+  gap: 15px;              /* Adds space between the input and buttons */
+  margin-bottom: 15px;
+}
+
+/* --- Input Fields --- */
+input[type="text"] {
+  flex: 1;                /* Forces the input box to take up all left space */
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* --- Button Group Layout --- */
+.button-group {
+  display: flex;          /* Places the buttons side-by-side on the right */
+  gap: 5px;               /* Adds a tiny gap between each button */
+}
+
+/* --- Individual Button Styling --- */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Different colors for each button feature */
+#addBtn {
+  background-color: #28a745; /* Green */
+}
+
+#deleteBtn {
+  background-color: #dc3545; /* Red */
+}
+
+#checkBtn {
+  background-color: #007bff; /* Blue */
+}
+
+/* Hover effects to make buttons feel interactive */
+button:hover {
+  opacity: 0.9;
+}
+
+/* --- Search Row Layout --- */
+.search-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-row input[type="text"] {
+  width: 100%;            /* Search box fills the entire row width */
+}
+
+/* --- Lists and UI Footer --- */
+ul {
+  list-style-type: none;  /* Removes default bullets */
+  padding: 0;
+}
+
+#emptyMessage {
+  text-align: center;
+  color: #999999;
+  margin: 20px 0;
+}
+
+.count-bar {
+  text-align: center;
+  color: #666666;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+}

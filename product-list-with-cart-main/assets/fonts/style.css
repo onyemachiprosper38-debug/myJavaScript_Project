@@ -1,0 +1,87 @@
+/* basic page styles */
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: #fcf8f6;
+  color: #43302b;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+/* PRODUCTS */
+
+/* put the product cards in a row that wraps on small screens */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.product {
+  width: 220px;
+  text-align: left;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add-btn {
+  display: block;
+  margin: -20px auto 0;
+  background-color: white;
+  border: 1px solid #a18572;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.category {
+  color: #a18572;
+  font-size: 14px;
+  margin: 16px 0 2px;
+}
+
+.name {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.price {
+  color: #c73b0a;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* CART */
+
+.cart {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 40px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.cart h2 {
+  color: #c73b0a;
+  text-align: left;
+  margin-top: 0;
+}
+
+.empty-cart-img {
+  width: 120px;
+  margin: 10px auto;
+}
+
+.cart p {
+  color: #a18572;
+  font-size: 14px;
+}
