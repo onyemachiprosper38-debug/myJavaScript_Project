@@ -62,13 +62,13 @@ button:active {
     background-color: grey;
 }
 
-.eqaulto {
+.equal-to {
     grid-row: span 2;
     background-color: blue;
     color: white;
 }
 
-.eqaulto:active {
+.equal-to:active {
     background-color: red;
 }
 
