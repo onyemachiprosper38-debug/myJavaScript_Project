@@ -2,7 +2,7 @@ const display = document.querySelector('.text-display');
 const buttons = document.querySelectorAll('button');
 
 for (let button of buttons) {
-    button.addEventListener('click', (event)=> {
+    button.addEventListener('click', ()=> {
         let buttonText = button.textContent;
         console.log(button);
    
